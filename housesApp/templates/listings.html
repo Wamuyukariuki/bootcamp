@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House Listings</title>
+</head>
+<body>
+    <h1>Available Listings</h1>
+    <ul>
+        {% for listing in listings %}
+            <li>
+                {{ listing.address }} - {{ listing.city }}, {{ listing.state }} {{ listing.zipcode }}<br>
+                {{ listing.description }}<br>
+                Price: ${{ listing.price }}<br>
+                Bedrooms: {{ listing.bedrooms }} Bathrooms: {{ listing.bathrooms }}<br>
+            </li>
+        {% endfor %} </ul>
+</body>
+</html>

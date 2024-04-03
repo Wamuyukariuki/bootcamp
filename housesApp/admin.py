@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import houseListingModel
+from .models import houseListing
 
 # Register your models here.
-admin.site.register(houseListingModel)
+admin.site.register(houseListing)
