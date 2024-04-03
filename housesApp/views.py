@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .models import houseListing  # Assuming your model is named houseListingModel
 
 
-# Create your views here.
+# Create your views here.(CRUD -CREATE
 
 def house_listing(request):
     """Fetches all listings from the database and renders the 'listings.html' template."""
